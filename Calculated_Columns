@@ -1,13 +1,22 @@
-Calculated Column to determine next FITREP for USMC personnel
+## Calculated Column to determine Age of personnel
+	This column is helpful for determining additional training requirements such as driver's improvement
+## Required Columns
+	Date of Birth (Date)
+=DATEDIF([Date of Birth], TODAY(),"Y")
+
+## Calculated Column Rotation Date
+	Rotation of personnel within the unit is based upon the date of their current tour beginning
+## Required Columns
+	DCTB - Date Current Tour Began // Can this get pulled from MOL // XLOOKUP or Index/Match within DIM_DCTB
+=DATE(YEAR(DCTB)+3,MONTH(DCTB),DAY(DCTB))
+	
+## Calculated Column to determine next FITREP for USMC personnel
 	Fitness reports are conducted at specific period and actions by the reporting senior
 	Each rank has a different annual reporting occassion
-
-Required Columns
+## Required Columns
 	Rank - Text (Choice) // Cpl, Sgt, SSgt, GySgt, MSgt, 1stSgt, MGySgt, WO - CWO5, Capt, Maj
 	Last FITREP (Date)
-
-Blank FITREP / Omitted AN
-
+## Blank FITREP / Omitted AN
 =IF(Rank="Cpl","",
 	IF([Omitted AN]=TRUE,
 		IF([Last FITREP]="",DATE(YEAR(TODAY()),12,31),
