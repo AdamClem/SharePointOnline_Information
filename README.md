@@ -18,7 +18,7 @@ instructions.
 
 ## Usage
 ### Calculated Columns
-Navigate to the `CalculatedColumns` directory and follow the instructions in the individual README files.
+Navigate to the `Calculated_Columns` directory and follow the instructions in the individual README files.
 
 ### Power Automate Workflows
 Navigate to the `PowerAutomateWorkflows` directory and follow the instructions in the individual README files.
