@@ -1,4 +1,10 @@
 Calculated Column to determine next FITREP for USMC personnel
+	Fitness reports are conducted at specific period and actions by the reporting senior
+	Each rank has a different annual reporting occassion
+
+Required Columns
+	Rank - Text (Choice) // Cpl, Sgt, SSgt, GySgt, MSgt, 1stSgt, MGySgt, WO - CWO5, Capt, Maj
+	Last FITREP (Date)
 
 Blank FITREP / Omitted AN
 
