@@ -26,12 +26,12 @@ Navigate to the `PowerAutomateWorkflows` directory and follow the instructions i
 ### JSON Customizations
 Navigate to the `JSONCustomizations` directory and follow the instructions in the individual README files.
 
-
   Personnel Header
+  
   ![Screenshot 2024-10-11 180948](https://github.com/user-attachments/assets/0b2e8d19-bc4f-4454-8e5e-1b0756dfe1c3)
 
-  
   Personnel Grouping
+  
   ![Screenshot 2024-10-11 181110](https://github.com/user-attachments/assets/f623b222-5646-4931-ae39-f88342c85724)
 
 
