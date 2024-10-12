@@ -1,0 +1,3 @@
+## Apply uppercase transformation to @currentField
+
+{"elmType":"span","txtContent":"@currentField","style":{"text-transform":"uppercase"}}
