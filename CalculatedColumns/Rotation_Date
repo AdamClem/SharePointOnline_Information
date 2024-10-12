@@ -1,0 +1,10 @@
+## Calculated Column Rotation Date
+	Rotation of personnel within the unit is based upon the date of their current tour beginning
+
+## Required Columns
+	DCTB - Date Current Tour Began 
+
+=DATE(YEAR(DCTB)+3,MONTH(DCTB),DAY(DCTB))
+
+Improvements:
+  Can this get pulled from MOL? // XLOOKUP or Index/Match within DIM_DCTB
