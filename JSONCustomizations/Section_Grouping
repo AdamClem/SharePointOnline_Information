@@ -1,0 +1,39 @@
+## Body formatting for sections and grouping of information
+{
+    "sections": [
+        {
+            "displayname": "Section 1",
+            "fields": [
+                "Field 1",
+                "Field 2",
+                "Field 3",
+                "Field 4",
+                "Field 5",
+                "Field 6"
+            ]
+        },
+        {
+            "displayname": "Section 2",
+            "fields": [
+                "Field 1",
+                "Field 2",
+                "Field 3",
+                "Field 4",
+                "Field 5",
+                "Field 6"
+            ]
+        },
+        {
+            "displayname": "Section 3",
+            "fields": [
+                "Field 1",
+                "Field 2",
+                "Field 3",
+                "Field 4",
+                "Field 5",
+                "Field 6"
+
+            ]
+        }
+    ]
+}
