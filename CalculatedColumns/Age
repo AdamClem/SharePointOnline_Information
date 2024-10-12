@@ -1,0 +1,7 @@
+## Calculated Column to determine Age of personnel
+	This column is helpful for determining additional training requirements such as driver's improvement
+
+## Required Columns
+	Date of Birth (Date)
+
+=DATEDIF([Date of Birth], TODAY(),"Y")
