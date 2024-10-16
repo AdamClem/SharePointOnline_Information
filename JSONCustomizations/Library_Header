@@ -1,0 +1,25 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "attributes": {
+        "class": "ms-borderColor-neutralTertiary"
+    },
+    "style": {
+        "width": "100%",
+        "background-color": "darkgreen",
+        "color": "white",
+        "padding": "10px",
+        "display": "flex",
+        "justify-content": "space-between"
+    },
+    "children": [
+        {
+            "elmType": "span",
+            "txtContent": "= 'Nomenclature: ' + [$field_2]"
+        },
+        {
+            "elmType": "span",
+            "txtContent": "= 'Location: ' + [$field_9]"
+        }
+    ]
+}
