@@ -1,0 +1,13 @@
+Estimated Departure Date (EDD) is used to determine when a member is leaving the unit based on the end of service, or transfer to a new organization.
+Within the process of thier departure, there are specific events and milestones they must meet to execute thier transfer.
+The EDD is processed within the personnel management system that calculates based on the report date into thier new unit.
+
+=EDD-TODAY()
+
+Displays a whole number that can be used to project when a person is leaving.
+This helps in the managment of personnel by ensuring that there is a new member behind them so that no duties and responsibilities are gapped.
+
+The end of a contract is an important milestone for a person within the unit. There are specific times within the fiscal and calendar year that require personnel to decide to re-up thier contract, or move on.
+To calculate the End of Active Service (EAS) the below calculated column is used.
+
+=EAS-TODAY()
