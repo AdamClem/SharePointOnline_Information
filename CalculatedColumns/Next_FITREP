@@ -7,8 +7,8 @@
 	Last FITREP (Date)
 
 ## Blank FITREP / Omitted AN
-  Last FITREP column is blank indicating the Marine does not have a previous FITREP
-  They have an omitted AN report meaning they were recently promoted to Sgt (E-5) when he/she starts recieving FITREPS
+	Last FITREP column is blank indicating the Marine does not have a previous FITREP
+	They have an omitted AN report meaning they were recently promoted to Sgt (E-5) when he/she starts recieving FITREPS
 
 =IF(Rank="Cpl","",
 	IF([Omitted AN]=TRUE,
