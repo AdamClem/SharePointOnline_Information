@@ -1,0 +1,17 @@
+## Calculated column for next brief or event
+        Event scheduling follows the waterfall methodology of project management
+        In progress review 1 -> In progress review 2 -> Confirmation brief
+
+## Required columns
+        IPR1 - In progress review 1
+        IPR2 - In progress review 2
+        Confirmation Brief
+
+=IF([IPR 1]>=TODAY(),[IPR 1],
+        IF([IPR 2]>=TODAY(),[IPR 2],
+                IF([Confirmation Brief]>=TODAY(), [Confirmation Brief],"")
+        )
+)
+
+Exported to calendar view within the SharePoint list for visualizations
+Enhanced with PowerAutomate to aid in the notification process with upcoming events
