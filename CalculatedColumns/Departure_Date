@@ -1,13 +1,31 @@
-Estimated Departure Date (EDD) is used to determine when a member is leaving the unit based on the end of service, or transfer to a new organization.
-Within the process of thier departure, there are specific events and milestones they must meet to execute thier transfer.
-The EDD is processed within the personnel management system that calculates based on the report date into thier new unit.
+## Days until Estimated Departure Date (EDD) 
+          EDD is used to determine when a member is leaving the unit based on the end of service, or transfer to a new organization.
+
+## Required Columns
+          EDD - Provided by personnel management platform when a members has a transfer order to another unit
 
 =EDD-TODAY()
 
-Displays a whole number that can be used to project when a person is leaving.
-This helps in the managment of personnel by ensuring that there is a new member behind them so that no duties and responsibilities are gapped.
-
-The end of a contract is an important milestone for a person within the unit. There are specific times within the fiscal and calendar year that require personnel to decide to re-up thier contract, or move on.
-To calculate the End of Active Service (EAS) the below calculated column is used.
+## Days until EAS
+          This assists in determining the timeframe of a current contract for a member within the unit
+          This calculation will aid in determining if there is enough time on their current contract to complete a transfer or to be promoted
+                  Overseas service requires 36 months (1095 days) of obligated service on a contract
+                  Promotion to a rank requires a commitment of a minimum of 24 months (730 days)
 
 =EAS-TODAY()
+
+## Renlistment Year
+          Shows which fiscal year a member is required to renew their contract
+          Throughout the fiscal year there is only one occassion to process a contract renewal
+          Officers do not have contract end dates, and instead serve until the resignation of their comission
+
+## Required Columns
+          EAS - End of active service
+
+=IF(
+  OR(
+    Rank="WO",Rank="CWO2",Rank="CWO3",Rank="CWO4",Rank="CWO5",Rank="Capt",Rank="Maj"),"Indefinite",
+  IF(EAS="","EAS data missing",
+  IF(MONTH(EAS)>9,"FY"&YEAR(EAS+1),"FY"&YEAR(EAS))
+  )
+)
