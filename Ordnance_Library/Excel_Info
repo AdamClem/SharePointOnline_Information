@@ -1,0 +1,11 @@
+Column - Serial Number // Concatenation of multiple entries and helper columns
+  =F2 & "_" & G2 & "_" & TEXT(I2,"000")
+
+Column - Year // Looks for the current year from the date from MS Form
+  =MOD(YEAR(D2), 100)
+
+Column - Number // Provides uniformity within serial number and adds leading zeros as necessary
+  =TEXT(H2, "000")
+
+Column - Blank // This will start the year column over after the next year's date
+  =IF(OR(B1 <> "", D1 <> ""), "Last", "")
